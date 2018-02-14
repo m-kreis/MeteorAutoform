@@ -1,0 +1,21 @@
+<template name="list">
+  <h2>list</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>first name</th>
+        <th>last name</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each test in tests}}
+      <tr>
+        <td>{{test.firstName}}</td>
+        <td>{{test.lastName}}</td>
+        <td><a href="{{pathFor 'App.edit' id=test._id }}">edit</a></td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  <br>
+</template>

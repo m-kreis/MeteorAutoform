@@ -1,0 +1,8 @@
+<template name="update_form">
+    {{#autoForm collection=collection doc=doc id="updateForm" type="update" validation="keyup" trimStrings=false autosaveOnKeyup=true }}
+      {{> afQuickField name='_id'}}
+      {{> afQuickField name='firstName'}}
+      {{> afQuickField name='lastName'}}
+      <button type="submit" class="btn btn-primary">update</button>
+  {{/autoForm}}
+</template>
